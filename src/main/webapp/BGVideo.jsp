@@ -13,20 +13,18 @@
 	crossorigin="anonymous">
 
 <title>Hello, world!</title>
-<style type="text/css">
-.contain {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-}
-</style>
 </head>
 <body>
+	<!-- The video -->
+	<video autoplay muted loop id="myVideo">
+		<source src="rain.mp4" type="video/mp4">
+	</video>
 
-	<form action="HomePageDemo.jsp" class="contain" netlify>
-		<button class="btn btn-outline-warning" type="submit">Click Here</button>
-
-	</form>
+	<!-- Optional: some overlay text to describe the video -->
+	<div class="content">
+		<!-- Use a button to pause/play the video with JavaScript -->
+		<button id="myBtn" onclick="myFunction()"></button>
+	</div>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
